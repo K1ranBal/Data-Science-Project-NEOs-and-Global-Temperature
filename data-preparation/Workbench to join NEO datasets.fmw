@@ -1,0 +1,2555 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME2021\fme.exe" "C:\Users\KiranBal\OneDrive - West Midlands Combined Authority\Apprenticeship\DSPP\Formative\Datasets\Workbench to join NEO datasets.fmw"
+#          --SourceDataset_CSV2 "$(FME_MF_DIR_USERTYPED)neo.csv\neo.csv"
+#          --SourceDataset_CSV2_5 "$(FME_MF_DIR_USERTYPED)NASA Near-Earth Objects.csv\NASA Near-Earth Objects.csv"
+#          --SourceDataset_CSV2_4 "$(FME_MF_DIR_USERTYPED)NEO Earth Close Approaches.csv\NEO Earth Close Approaches.csv"
+#          --DestDataset_CSV2 "C:\Users\KiranBal\OneDrive - West Midlands Combined Authority\Apprenticeship\DSPP\Formative\Datasets"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="5789.04 2500.5"
+#!   DOC_TOP_LEFT="-1620.64 -2335.5"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="21821"
+#!   FME_DOCUMENT_GUID="a15686bb-368e-40bf-942b-550fc384acb6"
+#!   FME_DOCUMENT_PRIORGUID="00973376-bc53-4153-9ef5-de8beda51bd2"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="windows-1252"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2021.2.6.0 (20220727 - Build 21821 - WIN64)"
+#!   LAST_SAVE_DATE="2024-08-22T20:16:29"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="38"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-1222.23 -305.559"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="90"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="CSV2"
+#!   DATASET="$(SourceDataset_CSV2)"
+#!   KEYWORD="CSV2_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="csv_line_number uint64 csv_number_of_fields uint32 csv_skipped_line string csv_total_number_of_columns uint32 csv_type string fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string varchar(50) fme_type varchar(50) multi_reader_full_id string multi_reader_id string multi_reader_keyword varchar(50) multi_reader_type varchar(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="21821"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="csv file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="string"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the CSV file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="CSV2"
+#!   DATASET="$(SourceDataset_CSV2_5)"
+#!   KEYWORD="CSV2_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="csv_line_number uint64 csv_number_of_fields uint32 csv_skipped_line string csv_total_number_of_columns uint32 csv_type string fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string varchar(50) fme_type varchar(50) multi_reader_full_id string multi_reader_id string multi_reader_keyword varchar(50) multi_reader_type varchar(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="21821"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="csv file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="string"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the CSV file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="CSV2"
+#!   DATASET="$(SourceDataset_CSV2_4)"
+#!   KEYWORD="CSV2_3"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="csv_line_number uint64 csv_number_of_fields uint32 csv_skipped_line string csv_total_number_of_columns uint32 csv_type string fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string varchar(50) fme_type varchar(50) multi_reader_full_id string multi_reader_id string multi_reader_keyword varchar(50) multi_reader_type varchar(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="21821"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="csv file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="string"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the CSV file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="CSV2"
+#!   DATASET="$(DestDataset_CSV2)"
+#!   KEYWORD="CSV2_4"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="255"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="csv_existing_file_handling Yes csv_write_field_names firstrow csv_date_output_format FME"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="csv_type string fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string varchar(50) fme_type varchar(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP csv_dataset_group csv_existing_file_handling Dataset&quot; &quot;&quot; &quot;GUI CHOICE csv_existing_file_handling Yes%No Overwrite Existing File&quot; Yes &quot;GUI OPTIONAL NAMEDGROUP csv_fields_group csv_write_field_names Fields&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE csv_write_field_names If&lt;space&gt;Writing&lt;space&gt;First&lt;space&gt;Row,firstrow%Yes,yes%No,no Write Field Names Row&quot; firstrow &quot;GUI OPTIONAL NAMEDGROUP csv_types_group csv_date_output_format Types&quot; &quot;&quot; &quot;GUI STRING_OR_LOOKUP_CHOICE_ENCODED csv_date_output_format FME&lt;space&gt;&lt;openparen&gt;auto&lt;space&gt;format&lt;closeparen&gt;,FME%ISO&lt;space&gt;&lt;openparen&gt;auto&lt;space&gt;format&lt;closeparen&gt;,ISO%\&quot;%Y%m%d&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;date&lt;closeparen&gt;,%Y%m%d\&quot;%\&quot;%H%M%S&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;time&lt;closeparen&gt;,%H%M%S\&quot;%\&quot;%H%M%S%z&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;time&lt;space&gt;with&lt;space&gt;offset&lt;closeparen&gt;,%H%M%S%z\&quot;%\&quot;%Y%m%d%H%M%S&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;datetime&lt;closeparen&gt;,%Y%m%d%H%M%S\&quot;%\&quot;%Y%m%d%H%M%S%z&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;datetime&lt;space&gt;with&lt;space&gt;offset&lt;closeparen&gt;,%Y%m%d%H%M%S%z\&quot;%\&quot;%Y-%m-%d&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;date&lt;closeparen&gt;,%Y-%m-%d\&quot;%\&quot;%H:%M:%S&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;time&lt;closeparen&gt;,%H:%M:%S\&quot;%\&quot;%H:%M:%S%Ez&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;time&lt;space&gt;with&lt;space&gt;offset&lt;closeparen&gt;,%H:%M:%S%Ez\&quot;%\&quot;%Y-%m-%dT%H:%M:%S&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;datetime&lt;closeparen&gt;,%Y-%m-%dT%H:%M:%S\&quot;%\&quot;%Y-%m-%dT%H:%M:%S%Ez&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;datetime&lt;space&gt;with&lt;space&gt;offset&lt;closeparen&gt;,%Y-%m-%dT%H:%M:%S%Ez\&quot;%\&quot;%Y-W%W-%u&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;week&lt;closeparen&gt;,%Y-W%W-%u\&quot;%\&quot;%Y-%j&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;ordinal&lt;space&gt;date&lt;closeparen&gt;,%Y-%j\&quot;%\&quot;%Y:%m:%d&lt;space&gt;%H:%M:%S&lt;space&gt;&lt;openparen&gt;Exif&lt;space&gt;datetime&lt;closeparen&gt;,%Y:%m:%d%H:%M:%S\&quot;%\&quot;%d/%m/%Y\&quot;%\&quot;%d.%m.%Y\&quot;%\&quot;%B&lt;space&gt;%e&lt;comma&gt;&lt;space&gt;%Y\&quot;%\&quot;%b-%e-%Y\&quot;%\&quot;%I:%M:%S%p\&quot;%\&quot;%s&lt;space&gt;&lt;openparen&gt;Epoch&lt;space&gt;Time&lt;closeparen&gt;,%s\&quot;%\&quot;%Es&lt;space&gt;&lt;openparen&gt;Unzoned&lt;space&gt;Epoch&lt;space&gt;Time&lt;closeparen&gt;,%Es\&quot; Date Output Format&quot; FME "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS="&quot;*{}$"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="21821"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="CSV2_OUT_QUALIFY_FIELD_NAMES CSV2_OUT_QUALIFY_FIELD_VALUES CSV2_OUT_FIELD_QUALIFIER_CHARACTER CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER CSV2_OUT_ROW_TERMINATION CSV2_OUT_WRITE_SCHEMA_FILE CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="csv file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="string"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the CSV file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int64"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint64"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint32"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint16"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="uint8"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int64"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint64"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint32"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint16"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint8"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CSV2"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_feature_table"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_map"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_feature_table"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_map"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="CSV2"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="CSV"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="csv_none"
+#!   POSITION="-1620.6414064140645 165.00400004000028"
+#!   BOUNDING_RECT="-1620.6414064140645 165.00400004000028 454 71"
+#!   ORDER="500000000000001"
+#!   COLLAPSED="false"
+#!   KEYWORD="CSV2_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="varchar(33)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="est_diameter_min" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="est_diameter_max" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="relative_velocity" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="miss_distance" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="orbiting_body" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="sentry_object" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="absolute_magnitude" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hazardous" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="CSV"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="csv_none"
+#!   POSITION="-1620.6414064140645 -652.99599995999972"
+#!   BOUNDING_RECT="-1620.6414064140645 -652.99599995999972 454 71"
+#!   ORDER="500000000000002"
+#!   COLLAPSED="false"
+#!   KEYWORD="CSV2_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS="id name_limited col0"
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="col0" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="neo_reference_id" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="varchar(33)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name_limited" ATTR_TYPE="varchar(18)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="designation" ATTR_TYPE="varchar(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="absolute_magnitude_h" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="is_potentially_hazardous_asteroid" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="is_sentry_object" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kilometers_estimated_diameter_min" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kilometers_estimated_diameter_max" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="orbit_id" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="orbit_class_type" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="perihelion_distance" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="aphelion_distance" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="first_observation_date" ATTR_TYPE="varchar(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="last_observation_date" ATTR_TYPE="varchar(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="orbit_class_description" ATTR_TYPE="varchar(91)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="CSV"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="4"
+#!   FEAT_GEOMTYPE="csv_none"
+#!   POSITION="-1620.6414064140645 -1926.9959999599996"
+#!   BOUNDING_RECT="-1620.6414064140645 -1926.9959999599996 454 71"
+#!   ORDER="500000000000003"
+#!   COLLAPSED="false"
+#!   KEYWORD="CSV2_3"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Object" ATTR_TYPE="varchar(28)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Close-Approach (CA) Date" ATTR_TYPE="varchar(35)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CA DistanceNominal (au)" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CA DistanceMinimum (au)" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="V relative(km/s)" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="V infinity(km/s)" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="H(mag)" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Diameter" ATTR_TYPE="varchar(18)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Rarity" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="NASA Joined Datasets"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="22"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3600.2962903790144 -1008.6188472995841"
+#!   BOUNDING_RECT="3600.2962903790144 -1008.6188472995841 568.09999999999991 71"
+#!   ORDER="500000000000012"
+#!   COLLAPSED="false"
+#!   KEYWORD="CSV2_4"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name" ATTR_TYPE="varchar(33)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="est_diameter_min" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="est_diameter_max" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="relative_velocity" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="miss_distance" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="orbiting_body" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="sentry_object" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="absolute_magnitude" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="hazardous" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="name_NEO_ECA" ATTR_TYPE="varchar(33)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="neo_reference_id" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="designation" ATTR_TYPE="varchar(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="absolute_magnitude_h" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="is_potentially_hazardous_asteroid" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="is_sentry_object" ATTR_TYPE="varchar(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kilometers_estimated_diameter_min" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="kilometers_estimated_diameter_max" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="orbit_id" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="orbit_class_type" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="perihelion_distance" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="aphelion_distance" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="first_observation_date" ATTR_TYPE="varchar(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="last_observation_date" ATTR_TYPE="varchar(11)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="orbit_class_description" ATTR_TYPE="varchar(91)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Object" ATTR_TYPE="varchar(28)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Close-Approach (CA) Date" ATTR_TYPE="varchar(35)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CA DistanceNominal (au)" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CA DistanceMinimum (au)" ATTR_TYPE="real64" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="V relative(km/s)" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="V infinity(km/s)" ATTR_TYPE="real32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="H(mag)" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Diameter" ATTR_TYPE="varchar(18)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Rarity" ATTR_TYPE="varchar(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_dataset_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_date_output_format" PARM_VALUE="FME"/>
+#!     <DEFLINE_PARM PARM_NAME="csv_existing_file_handling" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="csv_fields_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_types_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_write_field_names" PARM_VALUE="firstrow"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="CSV2_2"
+#!   OVERRIDE="-CSV2_2_DATASET"
+#!   DATASET="CSV2_2/NASA Near-Earth Objects.csv"
+#! />
+#! <DATASET
+#!   NAME="CSV2_1"
+#!   OVERRIDE="-CSV2_1_DATASET"
+#!   DATASET="CSV2_1/neo.csv"
+#! />
+#! <DATASET
+#!   NAME="CSV2_3"
+#!   OVERRIDE="-CSV2_3_DATASET"
+#!   DATASET="CSV2_3/NEO Earth Close Approaches.csv"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="CSV2_4"
+#!   OVERRIDE="-CSV2_4_DATASET"
+#!   DATASET="CSV2_4/Datasets"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)neo.csv\neo.csv"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2_5 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)NASA Near-Earth Objects.csv\NASA Near-Earth Objects.csv"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_CSV2_4 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)NEO Earth Close Approaches.csv\NEO Earth Close Approaches.csv"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_CSV2 Destination CSV (Comma Separated Value) Folder:"
+#!   DEFAULT_VALUE="C:\Users\KiranBal\OneDrive - West Midlands Combined Authority\Apprenticeship\DSPP\Formative\Datasets"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxVc2Vyc1xcS2lyYW5CYWxcXE9uZURyaXZlIC0gV2VzdCBNaWRsYW5kcyBDb21iaW5lZCBBdXRob3JpdHlcXEFwcHJlbnRpY2VzaGlwXFxEU1BQXFxGb3JtYXRpdmVcXERhdGFzZXRzXFxuZW8uY3N2XFxuZW8uY3N2IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyIiwicHJvbXB0IjoiU291cmNlIENTViAoQ29tbWEgU2VwYXJhdGVkIFZhbHVlKSBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6InJlYWQiLCJkZWZhdWx0VmFsdWUiOiJDOlxcVXNlcnNcXEtpcmFuQmFsXFxPbmVEcml2ZSAtIFdlc3QgTWlkbGFuZHMgQ29tYmluZWQgQXV0aG9yaXR5XFxBcHByZW50aWNlc2hpcFxcRFNQUFxcRm9ybWF0aXZlXFxEYXRhc2V0c1xcTkFTQSBOZWFyLUVhcnRoIE9iamVjdHMuY3N2XFxOQVNBIE5lYXItRWFydGggT2JqZWN0cy5jc3YiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkNTVi9Db21wcmVzc2VkIENTVi9URVhUIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2IiwiKi5neiIsIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDU1YgRmlsZXMiLCJmaWx0ZXIiOlsiKi5jc3YiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0NTVjJfNSIsInByb21wdCI6IlNvdXJjZSBDU1YgKENvbW1hIFNlcGFyYXRlZCBWYWx1ZSkgRmlsZShzKToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJyZWFkIiwiZGVmYXVsdFZhbHVlIjoiQzpcXFVzZXJzXFxLaXJhbkJhbFxcT25lRHJpdmUgLSBXZXN0IE1pZGxhbmRzIENvbWJpbmVkIEF1dGhvcml0eVxcQXBwcmVudGljZXNoaXBcXERTUFBcXEZvcm1hdGl2ZVxcRGF0YXNldHNcXE5FTyBFYXJ0aCBDbG9zZSBBcHByb2FjaGVzLmNzdlxcTkVPIEVhcnRoIENsb3NlIEFwcHJvYWNoZXMuY3N2IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyXzQiLCJwcm9tcHQiOiJTb3VyY2UgQ1NWIChDb21tYSBTZXBhcmF0ZWQgVmFsdWUpIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJDOlxcVXNlcnNcXEtpcmFuQmFsXFxPbmVEcml2ZSAtIFdlc3QgTWlkbGFuZHMgQ29tYmluZWQgQXV0aG9yaXR5XFxBcHByZW50aWNlc2hpcFxcRFNQUFxcRm9ybWF0aXZlXFxEYXRhc2V0cyIsIml0ZW1zVG9TZWxlY3QiOiJmb2xkZXJzIiwibmFtZSI6IkRlc3REYXRhc2V0X0NTVjIiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBDU1YgKENvbW1hIFNlcGFyYXRlZCBWYWx1ZSkgRm9sZGVyOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19"
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="DestDataset_CSV2" IS_STAND_ALONE="false" />
+#!     <INFO NAME="SourceDataset_CSV2" IS_STAND_ALONE="false" />
+#!     <INFO NAME="SourceDataset_CSV2_4" IS_STAND_ALONE="false" />
+#!     <INFO NAME="SourceDataset_CSV2_5" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1000"
+#!   POSITION="-231.25231252312517 17.504625046250339"
+#!   BOUNDING_RECT="-231.25231252312517 17.504625046250339 430 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21821"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Use Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="id neo_reference_id AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Left"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureJoiner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="AttributeFilter"
+#!   VERSION="5"
+#!   POSITION="668.7566875668756 -431.25431254312542"
+#!   BOUNDING_RECT="668.7566875668756 -431.25431254312542 454 71"
+#!   ORDER="500000000000005"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21821"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;EMPTY&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;MISSING&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;NULL&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="neo_reference_id"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;Empty&lt;gt&gt;,&lt;lt&gt;Missing&lt;gt&gt;,&lt;lt&gt;Null&lt;gt&gt;,&lt;lt&gt;Unfiltered&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="AttributeRenamer"
+#!   VERSION="5"
+#!   POSITION="-1028.1352813528135 -771.88271882718811"
+#!   BOUNDING_RECT="-1028.1352813528135 -771.88271882718811 454 71"
+#!   ORDER="500000000000006"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21821"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="name name_NEO_ECA RENAME_SET_DEFAULT "/>
+#!     <XFORM_PARM PARM_NAME="MISSING_INPUT_ATTRS" PARM_VALUE="REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeRenamer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="16"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1000"
+#!   POSITION="1647.5183115644938 -1170.762038099278"
+#!   BOUNDING_RECT="1647.5183115644938 -1170.762038099278 430 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21821"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Use Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="name Object AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Left"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureJoiner_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="20"
+#!   TYPE="Sorter"
+#!   VERSION="3"
+#!   POSITION="-659.38159381593823 -2003.1450314503143"
+#!   BOUNDING_RECT="-659.38159381593823 -2003.1450314503143 454 71"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21821"
+#! >
+#!     <OUTPUT_FEAT NAME="SORTED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="SORT_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SORT_PARM" PARM_VALUE="Object NATURAL ASCENDING &quot;Close-Approach (CA) Date&quot; NATURAL DESCENDING"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sorter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="DuplicateFilter"
+#!   VERSION="5"
+#!   POSITION="200.00200002000031 -2264.4993749937498"
+#!   BOUNDING_RECT="200.00200002000031 -2264.4993749937498 454 71"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21821"
+#! >
+#!     <OUTPUT_FEAT NAME="UNIQUE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="DUPLICATE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="INPUT_ORDERED_CHOICE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="KEYATTR" PARM_VALUE="Object"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DuplicateFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="AttributeFilter"
+#!   VERSION="5"
+#!   POSITION="2563.6525750529718 -1170.762038099278"
+#!   BOUNDING_RECT="2563.6525750529718 -1170.762038099278 454 71"
+#!   ORDER="500000000000005"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21821"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;EMPTY&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;MISSING&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;NULL&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="est_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="relative_velocity" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="miss_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbiting_body" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="sentry_object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="hazardous" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="name_NEO_ECA" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="neo_reference_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="designation" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="absolute_magnitude_h" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="is_potentially_hazardous_asteroid" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="is_sentry_object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_min" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="kilometers_estimated_diameter_max" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_id" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="perihelion_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="aphelion_distance" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="first_observation_date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="last_observation_date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="orbit_class_description" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Object" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Close-Approach (CA) Date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceNominal (au)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CA DistanceMinimum (au)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="V relative(km/s)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="V infinity(km/s)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="H(mag)" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Diameter" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Rarity" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="Object"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;Empty&lt;gt&gt;,&lt;lt&gt;Missing&lt;gt&gt;,&lt;lt&gt;Null&lt;gt&gt;,&lt;lt&gt;Unfiltered&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="23"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="20"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="21"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="20"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 0 SORTED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 UNIQUE"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 3 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="26"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="22"
+#!   SOURCE_PORT_DESC="fo 3 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.82352941176470584,0.82352941176470584,0.82352941176470584,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 38
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_CSV2_1,CSV2_IN_FIELDS_GROUP_CSV2_1,CSV2_IN_DELIMITER_CSV2_1,CSV2_IN_FIELD_NAMES_LINE_CSV2_1,CSV2_IN_DATA_START_LINE_CSV2_1,CSV2_IN_ADVANCED_GROUP_CSV2_1,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1,CSV2_IN_FIELD_NAMES_GROUP_CSV2_1,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1,CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1,CSV2_IN_FIELD_VALUES_GROUP_CSV2_1,CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1,CSV2_IN_ENCODING_GROUP_CSV2_1,CSV2_IN_ENCODING_CSV2_1,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1,CSV2_IN_READ_SKIPPED_LINES_CSV2_1,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1,SourceDataset_CSV2_2,CSV2_IN_FIELDS_GROUP_CSV2_2,CSV2_IN_DELIMITER_CSV2_2,CSV2_IN_FIELD_NAMES_LINE_CSV2_2,CSV2_IN_DATA_START_LINE_CSV2_2,CSV2_IN_ADVANCED_GROUP_CSV2_2,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2,CSV2_IN_FIELD_NAMES_GROUP_CSV2_2,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2,CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2,CSV2_IN_FIELD_VALUES_GROUP_CSV2_2,CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2,CSV2_IN_ENCODING_GROUP_CSV2_2,CSV2_IN_ENCODING_CSV2_2,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2,CSV2_IN_READ_SKIPPED_LINES_CSV2_2,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2,SourceDataset_CSV2_3,CSV2_IN_FIELDS_GROUP_CSV2_3,CSV2_IN_DELIMITER_CSV2_3,CSV2_IN_FIELD_NAMES_LINE_CSV2_3,CSV2_IN_DATA_START_LINE_CSV2_3,CSV2_IN_ADVANCED_GROUP_CSV2_3,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_3,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_3,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_3,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_3,CSV2_IN_FIELD_NAMES_GROUP_CSV2_3,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_3,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_3,CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_3,CSV2_IN_FIELD_VALUES_GROUP_CSV2_3,CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_3,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_3,CSV2_IN_ENCODING_GROUP_CSV2_3,CSV2_IN_ENCODING_CSV2_3,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_3,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_3,CSV2_IN_READ_SKIPPED_LINES_CSV2_3,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_3,DestDataset_CSV2_4,CSV2_OUT_DATASET_GROUP_CSV2_4,CSV2_OUT_EXTENSION_CSV2_4,CSV2_OUT_FIELDS_GROUP_CSV2_4,CSV2_OUT_DELIMITER_CSV2_4,CSV2_OUT_ENCODING_GROUP_CSV2_4,CSV2_OUT_ENCODING_CSV2_4,CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_4,CSV2_OUT_ADVANCED_GROUP_CSV2_4,CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_4,CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_4,CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_4,CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_4,CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_4,CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_4,CSV2_OUT_ROW_TERMINATION_CSV2_4,CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_4,CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_4
+# ============================================================================
+DEFAULT_MACRO SourceDataset_CSV2 $(FME_MF_DIR)neo.csv\neo.csv
+DEFAULT_MACRO SourceDataset_CSV2_5 $(FME_MF_DIR)NASA Near-Earth Objects.csv\NASA Near-Earth Objects.csv
+DEFAULT_MACRO SourceDataset_CSV2_4 $(FME_MF_DIR)NEO Earth Close Approaches.csv\NEO Earth Close Approaches.csv
+DEFAULT_MACRO DestDataset_CSV2 C:\Users\KiranBal\OneDrive - West Midlands Combined Authority\Apprenticeship\DSPP\Formative\Datasets
+# ============================================================================
+GUI MULTIFILE SourceDataset_CSV2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):
+GUI MULTIFILE SourceDataset_CSV2_5 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):
+GUI MULTIFILE SourceDataset_CSV2_4 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files|* Source CSV (Comma Separated Value) File(s):
+GUI DIRNAME DestDataset_CSV2 Destination CSV (Comma Separated Value) Folder:
+# ============================================================================
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxVc2Vyc1xcS2lyYW5CYWxcXE9uZURyaXZlIC0gV2VzdCBNaWRsYW5kcyBDb21iaW5lZCBBdXRob3JpdHlcXEFwcHJlbnRpY2VzaGlwXFxEU1BQXFxGb3JtYXRpdmVcXERhdGFzZXRzXFxuZW8uY3N2XFxuZW8uY3N2IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyIiwicHJvbXB0IjoiU291cmNlIENTViAoQ29tbWEgU2VwYXJhdGVkIFZhbHVlKSBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6InJlYWQiLCJkZWZhdWx0VmFsdWUiOiJDOlxcVXNlcnNcXEtpcmFuQmFsXFxPbmVEcml2ZSAtIFdlc3QgTWlkbGFuZHMgQ29tYmluZWQgQXV0aG9yaXR5XFxBcHByZW50aWNlc2hpcFxcRFNQUFxcRm9ybWF0aXZlXFxEYXRhc2V0c1xcTkFTQSBOZWFyLUVhcnRoIE9iamVjdHMuY3N2XFxOQVNBIE5lYXItRWFydGggT2JqZWN0cy5jc3YiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkNTVi9Db21wcmVzc2VkIENTVi9URVhUIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2IiwiKi5neiIsIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDU1YgRmlsZXMiLCJmaWx0ZXIiOlsiKi5jc3YiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IlRleHQgRmlsZXMiLCJmaWx0ZXIiOlsiKi50eHQiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0NTVjJfNSIsInByb21wdCI6IlNvdXJjZSBDU1YgKENvbW1hIFNlcGFyYXRlZCBWYWx1ZSkgRmlsZShzKToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJyZWFkIiwiZGVmYXVsdFZhbHVlIjoiQzpcXFVzZXJzXFxLaXJhbkJhbFxcT25lRHJpdmUgLSBXZXN0IE1pZGxhbmRzIENvbWJpbmVkIEF1dGhvcml0eVxcQXBwcmVudGljZXNoaXBcXERTUFBcXEZvcm1hdGl2ZVxcRGF0YXNldHNcXE5FTyBFYXJ0aCBDbG9zZSBBcHByb2FjaGVzLmNzdlxcTkVPIEVhcnRoIENsb3NlIEFwcHJvYWNoZXMuY3N2IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyXzQiLCJwcm9tcHQiOiJTb3VyY2UgQ1NWIChDb21tYSBTZXBhcmF0ZWQgVmFsdWUpIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJDOlxcVXNlcnNcXEtpcmFuQmFsXFxPbmVEcml2ZSAtIFdlc3QgTWlkbGFuZHMgQ29tYmluZWQgQXV0aG9yaXR5XFxBcHByZW50aWNlc2hpcFxcRFNQUFxcRm9ybWF0aXZlXFxEYXRhc2V0cyIsIml0ZW1zVG9TZWxlY3QiOiJmb2xkZXJzIiwibmFtZSI6IkRlc3REYXRhc2V0X0NTVjIiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBDU1YgKENvbW1hIFNlcGFyYXRlZCBWYWx1ZSkgRm9sZGVyOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6ZmFsc2UsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifV19
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_CSV2)} == {}} { puts_real {Parameter 'SourceDataset_CSV2' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_CSV2_5)} == {}} { puts_real {Parameter 'SourceDataset_CSV2_5' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_CSV2_4)} == {}} { puts_real {Parameter 'SourceDataset_CSV2_4' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_CSV2)} == {}} { puts_real {Parameter 'DestDataset_CSV2' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} CSV2
+MULTI_READER_KEYWORD{0} CSV2_1
+MULTI_READER_GEN_DIRECTIVES{0} ENCODING_GROUP,,SCHEMA,,SCHEMA_GENERATION_GROUP,,SCAN_ADDITIONAL_FIELDS,No,PREVIEW_PLACEHOLDER,,TRIM_FEATURE_TYPE_NAME,Yes,REPLACE_ATTR_NAME_INVALID_CHARS,Yes,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,FIELDS_GROUP,,FIELD_NAMES_GROUP,,ENFORCE_STRICT_SCHEMA,No,FIELD_SEPARATION_GROUP,,SKIPPED_LINES_GROUP,,READ_SKIPPED_LINES,No,USE_CUSTOM_SCHEMA,NO,SCAN_MAX_ROWS,10000,TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,CSV2_EXPOSE_FORMAT_ATTRS,,SCAN_TYPES,Yes,DATE_INPUT_FORMAT,FME,DATA_START_LINE,2,FIELD_NAMES_LINE,1,ADVANCED_GROUP,,FIELD_VALUES_GROUP,,STRING_TYPE_ATTRIBUTE_HANDLING,EXPLICIT_WIDTH,FIELD_QUALIFIER_ESCAPE_CHARACTER,<lt>quote<gt>,ENCODING,windows-1252,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,CHUNK_SIZE,100000,TRIM_FIELD_NAME_QUALIFIERS,Yes,CASE_SENSITIVE_FIELD_NAMES,Yes,TRIM_FIELD_NAME_WHITESPACE,Yes,SKIP_DUPLICATE_DELIMITERS,No,DATASET_GROUP,,FIELD_QUALIFIER_CHARACTER,<lt>quote<gt>,TRIM_FIELD_VALUE_QUALIFIERS,Yes,DELIMITER,auto,READ_EMPTY_VALUES_AS,Null,PRESERVE_SOURCE_ENCODING,No,FEATURE_TYPE_NAME,FORMAT_NAME,SUPPORTED_READER_ARCHIVE_EXTENSIONS,csv.gz<comma>txt.gz
+MULTI_READER_TYPE{1} CSV2
+MULTI_READER_KEYWORD{1} CSV2_2
+MULTI_READER_GEN_DIRECTIVES{1} ENCODING_GROUP,,SCHEMA,,SCHEMA_GENERATION_GROUP,,SCAN_ADDITIONAL_FIELDS,No,PREVIEW_PLACEHOLDER,,TRIM_FEATURE_TYPE_NAME,Yes,REPLACE_ATTR_NAME_INVALID_CHARS,Yes,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,FIELDS_GROUP,,FIELD_NAMES_GROUP,,ENFORCE_STRICT_SCHEMA,No,FIELD_SEPARATION_GROUP,,SKIPPED_LINES_GROUP,,READ_SKIPPED_LINES,No,USE_CUSTOM_SCHEMA,NO,SCAN_MAX_ROWS,10000,TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,CSV2_EXPOSE_FORMAT_ATTRS,,SCAN_TYPES,Yes,DATE_INPUT_FORMAT,FME,DATA_START_LINE,2,FIELD_NAMES_LINE,1,ADVANCED_GROUP,,FIELD_VALUES_GROUP,,STRING_TYPE_ATTRIBUTE_HANDLING,EXPLICIT_WIDTH,FIELD_QUALIFIER_ESCAPE_CHARACTER,<lt>quote<gt>,ENCODING,windows-1252,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,CHUNK_SIZE,100000,TRIM_FIELD_NAME_QUALIFIERS,Yes,CASE_SENSITIVE_FIELD_NAMES,Yes,TRIM_FIELD_NAME_WHITESPACE,Yes,SKIP_DUPLICATE_DELIMITERS,No,DATASET_GROUP,,FIELD_QUALIFIER_CHARACTER,<lt>quote<gt>,TRIM_FIELD_VALUE_QUALIFIERS,Yes,DELIMITER,auto,READ_EMPTY_VALUES_AS,Null,PRESERVE_SOURCE_ENCODING,No,FEATURE_TYPE_NAME,FORMAT_NAME,SUPPORTED_READER_ARCHIVE_EXTENSIONS,csv.gz<comma>txt.gz
+MULTI_READER_TYPE{2} CSV2
+MULTI_READER_KEYWORD{2} CSV2_3
+MULTI_READER_GEN_DIRECTIVES{2} ENCODING_GROUP,,SCHEMA,,SCHEMA_GENERATION_GROUP,,SCAN_ADDITIONAL_FIELDS,No,PREVIEW_PLACEHOLDER,,TRIM_FEATURE_TYPE_NAME,Yes,REPLACE_ATTR_NAME_INVALID_CHARS,Yes,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,FIELDS_GROUP,,FIELD_NAMES_GROUP,,ENFORCE_STRICT_SCHEMA,No,FIELD_SEPARATION_GROUP,,SKIPPED_LINES_GROUP,,READ_SKIPPED_LINES,No,USE_CUSTOM_SCHEMA,NO,SCAN_MAX_ROWS,10000,TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,CSV2_EXPOSE_FORMAT_ATTRS,,SCAN_TYPES,Yes,DATE_INPUT_FORMAT,FME,DATA_START_LINE,2,FIELD_NAMES_LINE,1,ADVANCED_GROUP,,FIELD_VALUES_GROUP,,STRING_TYPE_ATTRIBUTE_HANDLING,EXPLICIT_WIDTH,FIELD_QUALIFIER_ESCAPE_CHARACTER,<lt>quote<gt>,ENCODING,windows-1252,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,CHUNK_SIZE,100000,TRIM_FIELD_NAME_QUALIFIERS,Yes,CASE_SENSITIVE_FIELD_NAMES,Yes,TRIM_FIELD_NAME_WHITESPACE,Yes,SKIP_DUPLICATE_DELIMITERS,No,DATASET_GROUP,,FIELD_QUALIFIER_CHARACTER,<lt>quote<gt>,TRIM_FIELD_VALUE_QUALIFIERS,Yes,DELIMITER,auto,READ_EMPTY_VALUES_AS,Null,PRESERVE_SOURCE_ENCODING,No,FEATURE_TYPE_NAME,FORMAT_NAME,SUPPORTED_READER_ARCHIVE_EXTENSIONS,csv.gz<comma>txt.gz
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} CSV2
+MULTI_WRITER_KEYWORD{0} CSV2_4
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV2_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_1
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source CSV file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV2_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_1
+DEFAULT_MACRO SourceDataset_CSV2_1 $(SourceDataset_CSV2)
+GUI MULTIFILE SourceDataset_CSV2_1 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|* Source CSV (Comma Separated Value) File(s):
+DEFAULT_MACRO CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_1 Yes
+CSV2_1_TRIM_FEATURE_TYPE_NAME "$(CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_1 Yes
+CSV2_1_REPLACE_ATTR_NAME_INVALID_CHARS "$(CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_1 csv.gz,txt.gz
+CSV2_1_SUPPORTED_READER_ARCHIVE_EXTENSIONS "$(CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_FEATURE_TYPE_NAME_CSV2_1 FORMAT_NAME
+CSV2_1_FEATURE_TYPE_NAME "$(CSV2_IN_FEATURE_TYPE_NAME_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_FIELDS_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELDS_GROUP_CSV2_1 CSV2_IN_DELIMITER_CSV2_1%CSV2_IN_FIELD_NAMES_LINE_CSV2_1%CSV2_IN_DATA_START_LINE_CSV2_1 Fields
+DEFAULT_MACRO CSV2_IN_DELIMITER_CSV2_1 auto
+CSV2_1_DELIMITER "$(CSV2_IN_DELIMITER_CSV2_1)"
+GUI STRING_OR_CHOICE_ENCODED CSV2_IN_DELIMITER_CSV2_1 auto%,%;%|%space%tab Delimiter Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_LINE_CSV2_1 1
+CSV2_1_FIELD_NAMES_LINE "$(CSV2_IN_FIELD_NAMES_LINE_CSV2_1)"
+GUI OPTIONAL INT_OR_CHOICE CSV2_IN_FIELD_NAMES_LINE_CSV2_1 None%1%2%3%4%5 Field Names Line:
+GUI LOOKUP CSV2_IN_FIELD_NAMES_LINE_CSV2_1 None, 
+DEFAULT_MACRO CSV2_IN_DATA_START_LINE_CSV2_1 2
+CSV2_1_DATA_START_LINE "$(CSV2_IN_DATA_START_LINE_CSV2_1)"
+GUI RANGE_SLIDER CSV2_IN_DATA_START_LINE_CSV2_1 1%MAX%0 Data Start Line:
+DEFAULT_MACRO CSV2_IN_ADVANCED_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ADVANCED_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1%CSV2_IN_FIELD_NAMES_GROUP_CSV2_1%CSV2_IN_FIELD_VALUES_GROUP_CSV2_1%CSV2_IN_ENCODING_GROUP_CSV2_1%CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1%CSV2_IN_SCHEMA_GENERATION_GROUP Advanced
+DEFAULT_MACRO CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1%CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1%CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 Field Separation
+DEFAULT_MACRO CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1 No
+CSV2_1_SKIP_DUPLICATE_DELIMITERS "$(CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1)"
+GUI CHOICE CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_1 Yes%No Skip Duplicate Delimiters:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1 <quote>
+CSV2_1_FIELD_QUALIFIER_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_1 Field Qualifier Character:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 <quote>
+CSV2_1_FIELD_QUALIFIER_ESCAPE_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 Field Qualifier Escape Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_NAMES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1%CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1%CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1 Field Names
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_1 Yes
+CSV2_1_TRIM_FIELD_NAME_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1 Yes
+CSV2_1_CASE_SENSITIVE_FIELD_NAMES "$(CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1)"
+GUI CHOICE CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_1 Yes%No Case Sensitive Field Names:
+DEFAULT_MACRO CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 No
+CSV2_1_ENFORCE_STRICT_SCHEMA "$(CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1)"
+GUI CHOICE CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_1 Yes%No Enforce Strict Schema:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1 Yes
+CSV2_1_TRIM_FIELD_NAME_WHITESPACE "$(CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_1 Yes%No Trim Whitespaces From Field Names:
+DEFAULT_MACRO CSV2_IN_FIELD_VALUES_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_VALUES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1%CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1 Field Values
+DEFAULT_MACRO CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1 Null
+CSV2_1_READ_EMPTY_VALUES_AS "$(CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1)"
+GUI CHOICE CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_1 Missing%Null Read Empty Values As:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Yes
+CSV2_1_TRIM_FIELD_VALUE_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_1 Yes%No Trim Field Qualifier Characters:
+DEFAULT_MACRO CSV2_IN_ENCODING_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ENCODING_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_ENCODING_CSV2_1%CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 Encoding
+DEFAULT_MACRO CSV2_IN_ENCODING_CSV2_1 windows-1252
+CSV2_1_ENCODING "$(CSV2_IN_ENCODING_CSV2_1)"
+GUI STRING_OR_ENCODING CSV2_IN_ENCODING_CSV2_1 fme-system%* Character Encoding:
+DEFAULT_MACRO CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 No
+CSV2_1_PRESERVE_SOURCE_ENCODING "$(CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1)"
+GUI CHOICE CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_1 Yes%No Preserve Source Encoding:
+DEFAULT_MACRO CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_SKIPPED_LINES_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_IN_READ_SKIPPED_LINES_CSV2_1 Skipped Lines
+DEFAULT_MACRO CSV2_IN_READ_SKIPPED_LINES_CSV2_1 No
+CSV2_1_READ_SKIPPED_LINES "$(CSV2_IN_READ_SKIPPED_LINES_CSV2_1)"
+GUI CHOICE CSV2_IN_READ_SKIPPED_LINES_CSV2_1 Yes%No Read Skipped Lines:
+DEFAULT_MACRO CSV2_IN_SCAN_MAX_ROWS_CSV2_1 10000
+CSV2_1_SCAN_MAX_ROWS "$(CSV2_IN_SCAN_MAX_ROWS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_SCAN_TYPES_CSV2_1 Yes
+CSV2_1_SCAN_TYPES "$(CSV2_IN_SCAN_TYPES_CSV2_1)"
+# ============================================================================
+# Determines whether numeric attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_1 STANDARD_TYPES
+CSV2_1_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_1)"
+# ============================================================================
+# Determines whether string attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_1 EXPLICIT_WIDTH
+CSV2_1_STRING_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_DATE_INPUT_FORMAT_CSV2_1 FME
+CSV2_1_DATE_INPUT_FORMAT "$(CSV2_IN_DATE_INPUT_FORMAT_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_1 No
+CSV2_1_SCAN_ADDITIONAL_FIELDS "$(CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_1 
+CSV2_1_EXPOSE_ATTRS_GROUP "$(CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_1 Yes
+CSV2_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_1)"
+DEFAULT_MACRO CSV2_IN_CHUNK_SIZE_CSV2_1 100000
+CSV2_1_CHUNK_SIZE "$(CSV2_IN_CHUNK_SIZE_CSV2_1)"
+# ===========================================================================
+DEFAULT_MACRO CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1 
+CSV2_1_NETWORK_AUTHENTICATION "$(CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1)"
+GUI OPTIONAL AUTHENTICATOR CSV2_IN_NETWORK_AUTHENTICATION_CSV2_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO CSV2_IN_ATTRIBUTE_READING_CSV2_1 DEFLINE
+CSV2_1_ATTRIBUTE_READING "$(CSV2_IN_ATTRIBUTE_READING_CSV2_1)"
+# ============================================================================
+CSV2_1_GENERATE_FME_BUILD_NUM 21821
+CSV2_1_DATASET "$(SourceDataset_CSV2_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV2_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_2
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source CSV file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV2_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_2
+DEFAULT_MACRO SourceDataset_CSV2_2 $(SourceDataset_CSV2_5)
+GUI MULTIFILE SourceDataset_CSV2_2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|* Source CSV (Comma Separated Value) File(s):
+DEFAULT_MACRO CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_2 Yes
+CSV2_2_TRIM_FEATURE_TYPE_NAME "$(CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_2 Yes
+CSV2_2_REPLACE_ATTR_NAME_INVALID_CHARS "$(CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_2 csv.gz,txt.gz
+CSV2_2_SUPPORTED_READER_ARCHIVE_EXTENSIONS "$(CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_FEATURE_TYPE_NAME_CSV2_2 FORMAT_NAME
+CSV2_2_FEATURE_TYPE_NAME "$(CSV2_IN_FEATURE_TYPE_NAME_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_FIELDS_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELDS_GROUP_CSV2_2 CSV2_IN_DELIMITER_CSV2_2%CSV2_IN_FIELD_NAMES_LINE_CSV2_2%CSV2_IN_DATA_START_LINE_CSV2_2 Fields
+DEFAULT_MACRO CSV2_IN_DELIMITER_CSV2_2 auto
+CSV2_2_DELIMITER "$(CSV2_IN_DELIMITER_CSV2_2)"
+GUI STRING_OR_CHOICE_ENCODED CSV2_IN_DELIMITER_CSV2_2 auto%,%;%|%space%tab Delimiter Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_LINE_CSV2_2 1
+CSV2_2_FIELD_NAMES_LINE "$(CSV2_IN_FIELD_NAMES_LINE_CSV2_2)"
+GUI OPTIONAL INT_OR_CHOICE CSV2_IN_FIELD_NAMES_LINE_CSV2_2 None%1%2%3%4%5 Field Names Line:
+GUI LOOKUP CSV2_IN_FIELD_NAMES_LINE_CSV2_2 None, 
+DEFAULT_MACRO CSV2_IN_DATA_START_LINE_CSV2_2 2
+CSV2_2_DATA_START_LINE "$(CSV2_IN_DATA_START_LINE_CSV2_2)"
+GUI RANGE_SLIDER CSV2_IN_DATA_START_LINE_CSV2_2 1%MAX%0 Data Start Line:
+DEFAULT_MACRO CSV2_IN_ADVANCED_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ADVANCED_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2%CSV2_IN_FIELD_NAMES_GROUP_CSV2_2%CSV2_IN_FIELD_VALUES_GROUP_CSV2_2%CSV2_IN_ENCODING_GROUP_CSV2_2%CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2%CSV2_IN_SCHEMA_GENERATION_GROUP Advanced
+DEFAULT_MACRO CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2%CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2%CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2 Field Separation
+DEFAULT_MACRO CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2 No
+CSV2_2_SKIP_DUPLICATE_DELIMITERS "$(CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2)"
+GUI CHOICE CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2 Yes%No Skip Duplicate Delimiters:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2 <quote>
+CSV2_2_FIELD_QUALIFIER_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2 Field Qualifier Character:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2 <quote>
+CSV2_2_FIELD_QUALIFIER_ESCAPE_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2 Field Qualifier Escape Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_NAMES_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2%CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2%CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2 Field Names
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_2 Yes
+CSV2_2_TRIM_FIELD_NAME_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2 Yes
+CSV2_2_CASE_SENSITIVE_FIELD_NAMES "$(CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2)"
+GUI CHOICE CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2 Yes%No Case Sensitive Field Names:
+DEFAULT_MACRO CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2 No
+CSV2_2_ENFORCE_STRICT_SCHEMA "$(CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2)"
+GUI CHOICE CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2 Yes%No Enforce Strict Schema:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2 Yes
+CSV2_2_TRIM_FIELD_NAME_WHITESPACE "$(CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2 Yes%No Trim Whitespaces From Field Names:
+DEFAULT_MACRO CSV2_IN_FIELD_VALUES_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_VALUES_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2%CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2 Field Values
+DEFAULT_MACRO CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2 Null
+CSV2_2_READ_EMPTY_VALUES_AS "$(CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2)"
+GUI CHOICE CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2 Missing%Null Read Empty Values As:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2 Yes
+CSV2_2_TRIM_FIELD_VALUE_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2 Yes%No Trim Field Qualifier Characters:
+DEFAULT_MACRO CSV2_IN_ENCODING_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ENCODING_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_ENCODING_CSV2_2%CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2 Encoding
+DEFAULT_MACRO CSV2_IN_ENCODING_CSV2_2 windows-1252
+CSV2_2_ENCODING "$(CSV2_IN_ENCODING_CSV2_2)"
+GUI STRING_OR_ENCODING CSV2_IN_ENCODING_CSV2_2 fme-system%* Character Encoding:
+DEFAULT_MACRO CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2 No
+CSV2_2_PRESERVE_SOURCE_ENCODING "$(CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2)"
+GUI CHOICE CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2 Yes%No Preserve Source Encoding:
+DEFAULT_MACRO CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2 FME_DISCLOSURE_CLOSED%CSV2_IN_READ_SKIPPED_LINES_CSV2_2 Skipped Lines
+DEFAULT_MACRO CSV2_IN_READ_SKIPPED_LINES_CSV2_2 No
+CSV2_2_READ_SKIPPED_LINES "$(CSV2_IN_READ_SKIPPED_LINES_CSV2_2)"
+GUI CHOICE CSV2_IN_READ_SKIPPED_LINES_CSV2_2 Yes%No Read Skipped Lines:
+DEFAULT_MACRO CSV2_IN_SCAN_MAX_ROWS_CSV2_2 10000
+CSV2_2_SCAN_MAX_ROWS "$(CSV2_IN_SCAN_MAX_ROWS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_SCAN_TYPES_CSV2_2 Yes
+CSV2_2_SCAN_TYPES "$(CSV2_IN_SCAN_TYPES_CSV2_2)"
+# ============================================================================
+# Determines whether numeric attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_2 STANDARD_TYPES
+CSV2_2_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_2)"
+# ============================================================================
+# Determines whether string attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_2 EXPLICIT_WIDTH
+CSV2_2_STRING_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_DATE_INPUT_FORMAT_CSV2_2 FME
+CSV2_2_DATE_INPUT_FORMAT "$(CSV2_IN_DATE_INPUT_FORMAT_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_2 No
+CSV2_2_SCAN_ADDITIONAL_FIELDS "$(CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_2 
+CSV2_2_EXPOSE_ATTRS_GROUP "$(CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_2 Yes
+CSV2_2_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_2)"
+DEFAULT_MACRO CSV2_IN_CHUNK_SIZE_CSV2_2 100000
+CSV2_2_CHUNK_SIZE "$(CSV2_IN_CHUNK_SIZE_CSV2_2)"
+# ===========================================================================
+DEFAULT_MACRO CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2 
+CSV2_2_NETWORK_AUTHENTICATION "$(CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2)"
+GUI OPTIONAL AUTHENTICATOR CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO CSV2_IN_ATTRIBUTE_READING_CSV2_2 DEFLINE
+CSV2_2_ATTRIBUTE_READING "$(CSV2_IN_ATTRIBUTE_READING_CSV2_2)"
+# ============================================================================
+CSV2_2_GENERATE_FME_BUILD_NUM 21821
+CSV2_2_DATASET "$(SourceDataset_CSV2_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV2_3"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_3
+# =====================================================================
+# The following GUI line prompts for a file to be used as the source CSV file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV2_3 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV2 CSV2_3
+DEFAULT_MACRO SourceDataset_CSV2_3 $(SourceDataset_CSV2_4)
+GUI MULTIFILE SourceDataset_CSV2_3 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|* Source CSV (Comma Separated Value) File(s):
+DEFAULT_MACRO CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_3 Yes
+CSV2_3_TRIM_FEATURE_TYPE_NAME "$(CSV2_IN_TRIM_FEATURE_TYPE_NAME_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_3 Yes
+CSV2_3_REPLACE_ATTR_NAME_INVALID_CHARS "$(CSV2_IN_REPLACE_ATTR_NAME_INVALID_CHARS_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_3 csv.gz,txt.gz
+CSV2_3_SUPPORTED_READER_ARCHIVE_EXTENSIONS "$(CSV2_IN_SUPPORTED_READER_ARCHIVE_EXTENSIONS_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_FEATURE_TYPE_NAME_CSV2_3 FORMAT_NAME
+CSV2_3_FEATURE_TYPE_NAME "$(CSV2_IN_FEATURE_TYPE_NAME_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_FIELDS_GROUP_CSV2_3 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELDS_GROUP_CSV2_3 CSV2_IN_DELIMITER_CSV2_3%CSV2_IN_FIELD_NAMES_LINE_CSV2_3%CSV2_IN_DATA_START_LINE_CSV2_3 Fields
+DEFAULT_MACRO CSV2_IN_DELIMITER_CSV2_3 auto
+CSV2_3_DELIMITER "$(CSV2_IN_DELIMITER_CSV2_3)"
+GUI STRING_OR_CHOICE_ENCODED CSV2_IN_DELIMITER_CSV2_3 auto%,%;%|%space%tab Delimiter Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_LINE_CSV2_3 1
+CSV2_3_FIELD_NAMES_LINE "$(CSV2_IN_FIELD_NAMES_LINE_CSV2_3)"
+GUI OPTIONAL INT_OR_CHOICE CSV2_IN_FIELD_NAMES_LINE_CSV2_3 None%1%2%3%4%5 Field Names Line:
+GUI LOOKUP CSV2_IN_FIELD_NAMES_LINE_CSV2_3 None, 
+DEFAULT_MACRO CSV2_IN_DATA_START_LINE_CSV2_3 2
+CSV2_3_DATA_START_LINE "$(CSV2_IN_DATA_START_LINE_CSV2_3)"
+GUI RANGE_SLIDER CSV2_IN_DATA_START_LINE_CSV2_3 1%MAX%0 Data Start Line:
+DEFAULT_MACRO CSV2_IN_ADVANCED_GROUP_CSV2_3 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ADVANCED_GROUP_CSV2_3 FME_DISCLOSURE_CLOSED%CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_3%CSV2_IN_FIELD_NAMES_GROUP_CSV2_3%CSV2_IN_FIELD_VALUES_GROUP_CSV2_3%CSV2_IN_ENCODING_GROUP_CSV2_3%CSV2_IN_SKIPPED_LINES_GROUP_CSV2_3%CSV2_IN_SCHEMA_GENERATION_GROUP Advanced
+DEFAULT_MACRO CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_3 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_3 FME_DISCLOSURE_CLOSED%CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_3%CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_3%CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_3 Field Separation
+DEFAULT_MACRO CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_3 No
+CSV2_3_SKIP_DUPLICATE_DELIMITERS "$(CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_3)"
+GUI CHOICE CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_3 Yes%No Skip Duplicate Delimiters:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_3 <quote>
+CSV2_3_FIELD_QUALIFIER_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_3)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_3 Field Qualifier Character:
+DEFAULT_MACRO CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_3 <quote>
+CSV2_3_FIELD_QUALIFIER_ESCAPE_CHARACTER "$(CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_3)"
+GUI OPTIONAL STRING_ENCODED CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_3 Field Qualifier Escape Character:
+DEFAULT_MACRO CSV2_IN_FIELD_NAMES_GROUP_CSV2_3 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_NAMES_GROUP_CSV2_3 FME_DISCLOSURE_CLOSED%CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_3%CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_3%CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_3 Field Names
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_3 Yes
+CSV2_3_TRIM_FIELD_NAME_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_NAME_QUALIFIERS_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_3 Yes
+CSV2_3_CASE_SENSITIVE_FIELD_NAMES "$(CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_3)"
+GUI CHOICE CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_3 Yes%No Case Sensitive Field Names:
+DEFAULT_MACRO CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_3 No
+CSV2_3_ENFORCE_STRICT_SCHEMA "$(CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_3)"
+GUI CHOICE CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_3 Yes%No Enforce Strict Schema:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_3 Yes
+CSV2_3_TRIM_FIELD_NAME_WHITESPACE "$(CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_3)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_3 Yes%No Trim Whitespaces From Field Names:
+DEFAULT_MACRO CSV2_IN_FIELD_VALUES_GROUP_CSV2_3 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_FIELD_VALUES_GROUP_CSV2_3 FME_DISCLOSURE_CLOSED%CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_3%CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_3 Field Values
+DEFAULT_MACRO CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_3 Null
+CSV2_3_READ_EMPTY_VALUES_AS "$(CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_3)"
+GUI CHOICE CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_3 Missing%Null Read Empty Values As:
+DEFAULT_MACRO CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_3 Yes
+CSV2_3_TRIM_FIELD_VALUE_QUALIFIERS "$(CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_3)"
+GUI CHOICE CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_3 Yes%No Trim Field Qualifier Characters:
+DEFAULT_MACRO CSV2_IN_ENCODING_GROUP_CSV2_3 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_ENCODING_GROUP_CSV2_3 FME_DISCLOSURE_CLOSED%CSV2_IN_ENCODING_CSV2_3%CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_3 Encoding
+DEFAULT_MACRO CSV2_IN_ENCODING_CSV2_3 windows-1252
+CSV2_3_ENCODING "$(CSV2_IN_ENCODING_CSV2_3)"
+GUI STRING_OR_ENCODING CSV2_IN_ENCODING_CSV2_3 fme-system%* Character Encoding:
+DEFAULT_MACRO CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_3 No
+CSV2_3_PRESERVE_SOURCE_ENCODING "$(CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_3)"
+GUI CHOICE CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_3 Yes%No Preserve Source Encoding:
+DEFAULT_MACRO CSV2_IN_SKIPPED_LINES_GROUP_CSV2_3 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_IN_SKIPPED_LINES_GROUP_CSV2_3 FME_DISCLOSURE_CLOSED%CSV2_IN_READ_SKIPPED_LINES_CSV2_3 Skipped Lines
+DEFAULT_MACRO CSV2_IN_READ_SKIPPED_LINES_CSV2_3 No
+CSV2_3_READ_SKIPPED_LINES "$(CSV2_IN_READ_SKIPPED_LINES_CSV2_3)"
+GUI CHOICE CSV2_IN_READ_SKIPPED_LINES_CSV2_3 Yes%No Read Skipped Lines:
+DEFAULT_MACRO CSV2_IN_SCAN_MAX_ROWS_CSV2_3 10000
+CSV2_3_SCAN_MAX_ROWS "$(CSV2_IN_SCAN_MAX_ROWS_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_SCAN_TYPES_CSV2_3 Yes
+CSV2_3_SCAN_TYPES "$(CSV2_IN_SCAN_TYPES_CSV2_3)"
+# ============================================================================
+# Determines whether numeric attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_3 STANDARD_TYPES
+CSV2_3_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_TYPE_ATTRIBUTE_HANDLING_CSV2_3)"
+# ============================================================================
+# Determines whether string attributes should be interpreted as bounded or unbounded
+DEFAULT_MACRO CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_3 EXPLICIT_WIDTH
+CSV2_3_STRING_TYPE_ATTRIBUTE_HANDLING "$(CSV2_IN_STRING_TYPE_ATTRIBUTE_HANDLING_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_DATE_INPUT_FORMAT_CSV2_3 FME
+CSV2_3_DATE_INPUT_FORMAT "$(CSV2_IN_DATE_INPUT_FORMAT_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_3 No
+CSV2_3_SCAN_ADDITIONAL_FIELDS "$(CSV2_IN_SCAN_ADDITIONAL_FIELDS_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_3 
+CSV2_3_EXPOSE_ATTRS_GROUP "$(CSV2_IN_EXPOSE_ATTRS_GROUP_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_3 Yes
+CSV2_3_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(CSV2_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_CSV2_3)"
+DEFAULT_MACRO CSV2_IN_CHUNK_SIZE_CSV2_3 100000
+CSV2_3_CHUNK_SIZE "$(CSV2_IN_CHUNK_SIZE_CSV2_3)"
+# ===========================================================================
+DEFAULT_MACRO CSV2_IN_NETWORK_AUTHENTICATION_CSV2_3 
+CSV2_3_NETWORK_AUTHENTICATION "$(CSV2_IN_NETWORK_AUTHENTICATION_CSV2_3)"
+GUI OPTIONAL AUTHENTICATOR CSV2_IN_NETWORK_AUTHENTICATION_CSV2_3 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO CSV2_IN_ATTRIBUTE_READING_CSV2_3 DEFLINE
+CSV2_3_ATTRIBUTE_READING "$(CSV2_IN_ATTRIBUTE_READING_CSV2_3)"
+# ============================================================================
+CSV2_3_GENERATE_FME_BUILD_NUM 21821
+CSV2_3_DATASET "$(SourceDataset_CSV2_3)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV2_4"
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV2 CSV2_4
+# =====================================================================
+# The following GUI line prompts for a folder where the
+# CSV files will be stored
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CSV2_4 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV2 CSV2_4
+DEFAULT_MACRO DestDataset_CSV2_4 $(DestDataset_CSV2)
+GUI DIRNAME DestDataset_CSV2_4 Destination CSV (Comma Separated Value) Folder:
+DEFAULT_MACRO CSV2_OUT_DATASET_GROUP_CSV2_4 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_OUT_DATASET_GROUP_CSV2_4 CSV2_OUT_EXTENSION_CSV2_4%CSV2_OUT_EXISTING_FILE_HANDLING Dataset
+DEFAULT_MACRO CSV2_OUT_EXTENSION_CSV2_4 csv
+CSV2_4_EXTENSION "$(CSV2_OUT_EXTENSION_CSV2_4)"
+GUI OPTIONAL TEXT CSV2_OUT_EXTENSION_CSV2_4 Extension:
+DEFAULT_MACRO CSV2_OUT_EXISTING_FILE_HANDLING_CSV2_4 Yes
+CSV2_4_EXISTING_FILE_HANDLING "$(CSV2_OUT_EXISTING_FILE_HANDLING_CSV2_4)"
+DEFAULT_MACRO CSV2_OUT_FIELDS_GROUP_CSV2_4 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_OUT_FIELDS_GROUP_CSV2_4 CSV2_OUT_DELIMITER_CSV2_4%CSV2_OUT_WRITE_FIELD_NAMES Fields
+DEFAULT_MACRO CSV2_OUT_DELIMITER_CSV2_4 <comma>
+CSV2_4_DELIMITER "$(CSV2_OUT_DELIMITER_CSV2_4)"
+GUI STRING_OR_CHOICE_ENCODED CSV2_OUT_DELIMITER_CSV2_4 ,%;%|%space%tab Delimiter Character:
+DEFAULT_MACRO CSV2_OUT_WRITE_FIELD_NAMES_CSV2_4 firstrow
+CSV2_4_WRITE_FIELD_NAMES "$(CSV2_OUT_WRITE_FIELD_NAMES_CSV2_4)"
+DEFAULT_MACRO CSV2_OUT_ENCODING_GROUP_CSV2_4 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_OUT_ENCODING_GROUP_CSV2_4 CSV2_OUT_ENCODING_CSV2_4%CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_4 Encoding
+DEFAULT_MACRO CSV2_OUT_ENCODING_CSV2_4 UTF-8
+CSV2_4_ENCODING "$(CSV2_OUT_ENCODING_CSV2_4)"
+GUI STRING_OR_ENCODING CSV2_OUT_ENCODING_CSV2_4 fme-system%* Character Encoding:
+DEFAULT_MACRO CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_4 Yes
+CSV2_4_WRITE_BOM_FOR_UNICODE "$(CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_4)"
+GUI CHOICE CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_4 Yes%No Write Byte Order Mark for Unicode:
+DEFAULT_MACRO CSV2_OUT_ADVANCED_GROUP_CSV2_4 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_OUT_ADVANCED_GROUP_CSV2_4 FME_DISCLOSURE_CLOSED%CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_4%CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_4%CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_4%CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_4%CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_4%CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_4%CSV2_OUT_ROW_TERMINATION_CSV2_4%CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_4 Advanced
+DEFAULT_MACRO CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_4 if_needed
+CSV2_4_QUALIFY_FIELD_NAMES "$(CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_4)"
+GUI LOOKUP_CHOICE CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_4 Yes,yes%No,no%If<space>Needed,if_needed Qualify Field Names:
+DEFAULT_MACRO CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_4 if_needed
+CSV2_4_QUALIFY_FIELD_VALUES "$(CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_4)"
+GUI ACTIVECHOICE_LOOKUP CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_4 Yes,yes,CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_4%No,no%If<space>Needed,if_needed,CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_4 Qualify Field Values:
+DEFAULT_MACRO CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_4 <Unused>
+CSV2_4_UNQUALIFIED_FIELD_VALUE_HANDLING "$(CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_4)"
+GUI LOOKUP_CHOICE CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_4 Remove<space>Unsafe<space>Characters,remove_unsafe%Preserve<space>Unsafe<space>Characters,preserve_unsafe Unqualified Field Value Handling:
+DEFAULT_MACRO CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_4 Yes
+CSV2_4_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE "$(CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_4)"
+GUI CHOICE CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_4 Yes%No Treat Embedded Field Qualifiers As Unsafe:
+DEFAULT_MACRO CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_4 <quote>
+CSV2_4_FIELD_QUALIFIER_CHARACTER "$(CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_4)"
+GUI STRING_ENCODED CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_4 Field Qualifier Character:
+DEFAULT_MACRO CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_4 <quote>
+CSV2_4_FIELD_QUALIFIER_ESCAPE_CHARACTER "$(CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_4)"
+GUI STRING_ENCODED CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_4 Field Qualifier Escape Character:
+DEFAULT_MACRO CSV2_OUT_ROW_TERMINATION_CSV2_4 System
+CSV2_4_ROW_TERMINATION "$(CSV2_OUT_ROW_TERMINATION_CSV2_4)"
+GUI CHOICE CSV2_OUT_ROW_TERMINATION_CSV2_4 System%Windows%Unix%Macintosh Row Termination:
+DEFAULT_MACRO CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_4 NO
+CSV2_4_WRITE_SCHEMA_FILE "$(CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_4)"
+GUI ACTIVEDISCLOSUREGROUP CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_4 FME_DISCLOSURE_CLOSED%CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_4 Write Schema Configuration File
+DEFAULT_MACRO CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_4 <Unused>
+CSV2_4_EXISTING_SCHEMA_FILE_HANDLING "$(CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_4)"
+GUI CHOICE CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_4 Overwrite%Prepend Existing Schema File Handling:
+DEFAULT_MACRO CSV2_OUT_COORDINATE_SYSTEM_GRANULARITY_CSV2_4 FEATURE_TYPE
+CSV2_4_COORDINATE_SYSTEM_GRANULARITY "$(CSV2_OUT_COORDINATE_SYSTEM_GRANULARITY_CSV2_4)"
+# ============================================================================
+CSV2_4_GENERATE_FME_BUILD_NUM 21821
+CSV2_4_DATASET "$(DestDataset_CSV2_4)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Workbench to join NEO datasets.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING windows-1252
+LAST_SAVE_BUILD "FME 2021.2.6.0 (20220727 - Build 21821 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_CSV2_1 CSV2_1
+DEFAULT_MACRO DATASET_KEYWORD_CSV2_2 CSV2_2
+DEFAULT_MACRO DATASET_KEYWORD_CSV2_3 CSV2_3
+DEFAULT_MACRO DATASET_KEYWORD_CSV2_4 CSV2_4
+# -------------------------------------------------------------------------
+
+CSV2_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+CSV2_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+CSV2_3_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Workbench to join NEO datasets
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE CSV2 CSV2_1::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV2_1) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    ROUTE CSV2 CSV2_2::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV2_2) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    ROUTE CSV2 CSV2_3::CSV multi_reader_keyword,$(DATASET_KEYWORD_CSV2_3) TO FME_GENERIC ::CSV ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+CSV2_1_MERGE_DEF CSV2_1::CSV EXACT CSV DEFLINE fme_attribute_reading,defined,id,real64,name,varchar<openparen>33<closeparen>,est_diameter_min,real64,est_diameter_max,real64,relative_velocity,real64,miss_distance,real64,orbiting_body,varchar<openparen>6<closeparen>,sentry_object,varchar<openparen>6<closeparen>,absolute_magnitude,real32,hazardous,varchar<openparen>6<closeparen>
+CSV2_2_MERGE_DEF CSV2_2::CSV EXACT CSV DEFLINE fme_attribute_reading,defined,neo_reference_id,real64,name,varchar<openparen>33<closeparen>,designation,varchar<openparen>11<closeparen>,absolute_magnitude_h,real32,is_potentially_hazardous_asteroid,varchar<openparen>6<closeparen>,is_sentry_object,varchar<openparen>6<closeparen>,kilometers_estimated_diameter_min,real64,kilometers_estimated_diameter_max,real64,orbit_id,uint32,orbit_class_type,varchar<openparen>4<closeparen>,perihelion_distance,real64,aphelion_distance,real64,first_observation_date,varchar<openparen>11<closeparen>,last_observation_date,varchar<openparen>11<closeparen>,orbit_class_description,varchar<openparen>91<closeparen>
+CSV2_3_MERGE_DEF CSV2_3::CSV EXACT CSV DEFLINE fme_attribute_reading,defined,Object,varchar<openparen>28<closeparen>,Close-Approach<space><openparen>CA<closeparen><space>Date,varchar<openparen>35<closeparen>,CA<space>DistanceNominal<space><openparen>au<closeparen>,real32,CA<space>DistanceMinimum<space><openparen>au<closeparen>,real64,V<space>relative<openparen>km<solidus>s<closeparen>,real32,V<space>infinity<openparen>km<solidus>s<closeparen>,real32,H<openparen>mag<closeparen>,varchar<openparen>5<closeparen>,Diameter,varchar<openparen>18<closeparen>,Rarity,varchar<openparen>4<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV_CSV2_2 Splitter"    INPUT FEATURE_TYPE CSV      multi_reader_keyword $(DATASET_KEYWORD_CSV2_2)    OUTPUT FEATURE_TYPE CSV_CSV2_2
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV_CSV2_3 Splitter"    INPUT FEATURE_TYPE CSV      multi_reader_keyword $(DATASET_KEYWORD_CSV2_3)    OUTPUT FEATURE_TYPE CSV_CSV2_3
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV_CSV2_1 Splitter"    INPUT FEATURE_TYPE CSV      multi_reader_keyword $(DATASET_KEYWORD_CSV2_1)    OUTPUT FEATURE_TYPE CSV_CSV2_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SortFactory    FACTORY_NAME { Sorter }    INPUT  FEATURE_TYPE CSV_CSV2_3    SORT_ALPHA_AS_UTF8 { YES }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    SORT_BY { Object NATURAL ASCENDING "Close-Approach (CA) Date" NATURAL DESCENDING }    OUTPUT { SORTED FEATURE_TYPE Sorter_SORTED          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} DuplicateRemoverFactory    FACTORY_NAME { DuplicateFilter }    COMMAND_PARM_EVALUATION SINGLE_PASS    SUPPORTS_FEATURE_TABLES    INPUT  FEATURE_TYPE Sorter_SORTED    KEY_ATTRIBUTES { Object }    INPUT_IS_ORDERED { YES }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { UNIQUE FEATURE_TYPE DuplicateFilter_UNIQUE         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeRenamer }    INPUT  FEATURE_TYPE CSV_CSV2_2 	ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    MISSING_INPUT_ATTR_HANDLING RENAME_SET_DEFAULT REMOVE 	ATTR_ACTION { "name" "name_NEO_ECA" "RENAME_SET_DEFAULT" "" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeRenamer_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME { FeatureJoiner }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT LEFT FEATURE_TYPE CSV_CSV2_1    INPUT RIGHT FEATURE_TYPE AttributeRenamer_OUTPUT    JOIN_MODE { Left }    JOIN_KEYS { id neo_reference_id AUTO }    ATTR_CONFLICT_RES { USE_LEFT }    GEOMETRY_HANDLING { USE_LEFT }    OUTPUT { JOINED FEATURE_TYPE FeatureJoiner_JOINED        }    OUTPUT { <REJECTED> FEATURE_TYPE FeatureJoiner_<REJECTED>        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME FeatureJoiner_<Rejected> INPUT FEATURE_TYPE FeatureJoiner_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureJoiner<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeFilter }    INPUT  FEATURE_TYPE FeatureJoiner_JOINED    OUTPUT { FEATURE_TYPE AttributeFilter_FILTER }
+FACTORY_DEF {*} AttributeFilterFactory FACTORY_NAME AttributeFilter_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE AttributeFilter_FILTER FILTER_ATTRIBUTE { neo_reference_id } FILTER_VALUES { <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> } PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT <lt>EMPTY<gt> FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE AttributeFilter_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE AttributeFilter_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>EMPTY<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>MISSING<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>MISSING<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>NULL<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>NULL<gt>
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME { FeatureJoiner_2 }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT LEFT FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt>    INPUT RIGHT FEATURE_TYPE DuplicateFilter_UNIQUE    JOIN_MODE { Left }    JOIN_KEYS { name Object AUTO }    ATTR_CONFLICT_RES { USE_LEFT }    GEOMETRY_HANDLING { USE_LEFT }    OUTPUT { JOINED FEATURE_TYPE FeatureJoiner_2_JOINED        }    OUTPUT { <REJECTED> FEATURE_TYPE FeatureJoiner_2_<REJECTED>        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME FeatureJoiner_2_<Rejected> INPUT FEATURE_TYPE FeatureJoiner_2_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureJoiner_2<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeFilter_2 }    INPUT  FEATURE_TYPE FeatureJoiner_2_JOINED    OUTPUT { FEATURE_TYPE AttributeFilter_2_FILTER }
+FACTORY_DEF {*} AttributeFilterFactory FACTORY_NAME AttributeFilter_2_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE AttributeFilter_2_FILTER FILTER_ATTRIBUTE { Object } FILTER_VALUES { <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> } PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT <lt>EMPTY<gt> FEATURE_TYPE AttributeFilter_2_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE AttributeFilter_2_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE AttributeFilter_2_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE AttributeFilter_2_<lt>UNFILTERED<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <lt>EMPTY<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<lt>EMPTY<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <lt>MISSING<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<lt>MISSING<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter_2 <lt>NULL<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_2_<lt>NULL<gt>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeFilter_2_<lt>UNFILTERED<gt> TO CSV2 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>NASA<lt>space<gt>Joined<lt>space<gt>Datasets<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+CSV2_4_DEF "NASA Joined Datasets"   csv_existing_file_handling   Yes   csv_write_field_names        firstrow   csv_date_output_format       FME   id                           real64   name                         varchar(33)   est_diameter_min             real64   est_diameter_max             real64   relative_velocity            real64   miss_distance                real64   orbiting_body                varchar(6)   sentry_object                varchar(6)   absolute_magnitude           real32   hazardous                    varchar(6)   name_NEO_ECA                 varchar(33)   neo_reference_id             real64   designation                  varchar(11)   absolute_magnitude_h         real32   is_potentially_hazardous_asteroid varchar(6)   is_sentry_object             varchar(6)   kilometers_estimated_diameter_min real64   kilometers_estimated_diameter_max real64   orbit_id                     uint32   orbit_class_type             varchar(4)   perihelion_distance          real64   aphelion_distance            real64   first_observation_date       varchar(11)   last_observation_date        varchar(11)   orbit_class_description      varchar(91)   Object                       varchar(28)   "Close-Approach (CA) Date"   varchar(35)   "CA DistanceNominal (au)"    real32   "CA DistanceMinimum (au)"    real64   "V relative(km/s)"           real32   "V infinity(km/s)"           real32   "H(mag)"                     varchar(5)   Diameter                     varchar(18)   Rarity                       varchar(4)
