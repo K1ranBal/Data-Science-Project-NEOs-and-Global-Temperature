@@ -3,7 +3,7 @@ Data science project analysing research question on whether NEOs impact changes 
 # Portfolio Link: https://kb-datascience.github.io/KB.github.io/ 
 
 # Research Question
-Are changes in global temperatures correlated with historical near-earth-object (NEO) impacts. Is there a relationship between the two? 
+Are changes in global temperatures correlated with historical near-earth-object (NEO) impacts, is there a relationship between the two? 
 
 # Exec Summary
 This research explores whether there is a relationship between NEOs and global temperature changes by using statistical methods; correlation, K-means and regression to analyse historic NEO characteristics and temperature reports. Initially no strong linear correlations were found which led to clustering NEOs based on characteristics; magnitude and distance from Earth, by using K-means. Although successful clustering was applied, the regression model produced a weak relationship, R2 = 0.17. Results suggest NEOs do not have a significant influence on climate changes, however further analysis can be conducted to improve the data, shedding more light on climate change and extraterrestrial influencers. 
