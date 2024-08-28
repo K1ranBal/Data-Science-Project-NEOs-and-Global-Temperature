@@ -1,6 +1,6 @@
 # Data-Science-Project-NEOs-and-Global-Temperature
 Data science project analysing research question on whether NEOs impact changes of Earth's climate.
-# Portfolio Link: https://kb-datascience.github.io/KB.github.io/ 
+## Portfolio Link: https://kb-datascience.github.io/KB.github.io/ 
 
 # Research Question
 Are changes in global temperatures correlated with historical near-earth-object (NEO) impacts, is there a relationship between the two? 
@@ -61,7 +61,7 @@ Distribution charts paired with the descriptive statistics help understand the l
 
 Finally linear regression was applied to the data resulting in a weak correlation where R2 = 0.17, it is unlikely that the NEO variables influence the temperature. However the Standard Error (SE) = 0.2 indicating that the model predictions are close to the actual data points, potentially explained by the wide range of temperatures in each cluster. The minimum and maximum range of temperatures were between -0.5 and 1 for all clusters. The P value of the model was 0 resulting in rejecting the null hypothesis: NEOs have no impact on changes in global temperature. Overall the R2 value is not strong enough to prove causation of the research question however there is potential for further analysis to be conducted, splitting the data by its spatial properties to introduce granularity by region and month strengthening the value of R2. 
 
-**Results workbook can be found in files**
+**Results workbook can be found in analysis folder**
 
 # Conclusion
 NASA historical NEOs have been used for this research to determine if a model can be built to predict expected climate change in future. Research papers demonstrate scenarios where NEOs collide with Earth and result in drastic climate change (Chapman, 2003), this research uses statistical analysis to predict scenarios of NEOs that may contribute to climate change.
