@@ -51,7 +51,7 @@ At this point K-means clustering is initiated to group characteristics of NEOs t
 
 During K-means clustering, the three variables were normalised as the units of measurement were significantly different, this ensures accuracy when performing the K-means algorithm. Initial centroids were chosen at random from the normalised data points, which were calculated and recalculated to the point of stabilisation (the change between centroids after each iteration was almost non-existent). 
 
-The number of clusters (K values) have been determined by using the Elbow method, using the within-cluster sum of squares (inertia) value for a range of K values. The inertia at each K value was plotted on a line chart (figure 2), where the ‘elbow point’ was shown as K=4: determining 4 as the optimal number of clusters to use for this data.
+The number of clusters (K values) have been determined by using the Elbow method, using the within-cluster sum of squares (inertia) value for a range of K values. The inertia at each K value was plotted on a line chart, where the ‘elbow point’ was shown as K=4: determining 4 as the optimal number of clusters to use for this data.
 
 Descriptive statistics were performed on variables within each cluster to better understand the behaviours of a cluster.
 
