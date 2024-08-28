@@ -17,19 +17,17 @@ If a relationship is determined, we can use the historical data to predict the i
 
 # Analysis Outline
 ### Data Sources
-Green highlighter: Key Variables
 1.	Near Earth Objects 1900 to 2200: Near Earth Objects 1900 to 2200 (kaggle.com)
-Variables: 	NASA NEO ID, Name, Date & Time, Min Distance to Earth, Max Distance to Earth, Velocity, Magnitude, Diameter, Rarity.
+ Variables: 	NASA NEO ID, Name, Date & Time, Min Distance to Earth, Max Distance to Earth, Velocity, Magnitude, Diameter, Rarity.
 2.	NASA - Near Earth Objects: NASA - Nearest Earth Objects (kaggle.com)
-Variables: 	NASA NEO ID, Est Diameter Min, Est Diameter Max, Velocity, Miss Distance, Absolute Magnitude, Hazardous.
+ Variables: 	NASA NEO ID, Est Diameter Min, Est Diameter Max, Velocity, Miss Distance, Absolute Magnitude, Hazardous.
 3.	NASA NEO Earth Close Approaches: NASA Near Earth Objects Information (kaggle.com)
- 	Variables: 	NASA NEO ID, Object, Absolute Magnitude, Threat Flag, Min
-                                                Diameter of NEO.
+ 	Variables: 	NASA NEO ID, Object, Absolute Magnitude, Threat Flag, Min Diameter of NEO.
 4.	Global Surface Temperatures Data (NASA): Global Surface Temperatures Data By NASA (kaggle.com)
-Variables: 	Global Temps: Year, Month, Temperature. 
-Northern Hemisphere (NHem) Temps: Year, Month, Temperature.
-Southern Hemisphere Temps (SHem): Year, Month, Temperature.
-Zonal Temps: Year, Global, NHem, SHem, Zones, Temperature.
+ Variables: 	Global Temps: Year, Month, Temperature. 
+             Northern Hemisphere (NHem) Temps: Year, Month, Temperature.
+             Southern Hemisphere Temps (SHem): Year, Month, Temperature.
+             Zonal Temps: Year, Global, NHem, SHem, Zones, Temperature.
 
 Justification: All datasets have been chosen as they score high on completeness, credibility and compatibility. They are large in volume allowing for robust analysis and reliable modelling. They contain key variables on characteristics and temperature, which can be split by terrestrial coordinates for future research, that are crucial in addressing the research question.
 
